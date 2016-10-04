@@ -10,7 +10,7 @@ The application has two servlets one for the permissions request called FitbitAu
 
 To use the application, few steps are required:
 1. Start the jetty server with deployed web application.
-The server can be started with the gradle command: gradlew clean jettyRunWar -PimportFile=<path-to-CSV-file>. The application requires the importFile property to work properly. Currently it does not has any validation.
+The server can be started with the gradle command: gradlew clean jettyRunWar -PimportFile=&lt;path-to-CSV-file&gt;. The application requires the importFile property to work properly. Currently it does not has any validation.
 When the server is started, the 8080 port will be available. Please ensure that another software does not use this port.
 2. Open http://localhost:8080/jawbone-to-fitbit/auth - this page will redirect to the Fitbit authentication site and will requirest permission for usage of the user data.
 When the permissions are granted, Fitbit will redirect back to http://localhost:8080/import which will parse the CSV file and start execution of requests to the Fitbit API.
